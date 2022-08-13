@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Note App</title>
+</head>
+
+<body>
+    <div class="popup hide"></div>
+    <div class="note-app">
+        <aside>
+            <div class="show-aside-btn">
+                <i class="fa-solid fa-arrow-circle-right"></i>
+            </div>
+            <ul class="pages">
+                <li class="active add" data-page=".add-page">
+                    <i class="fa-solid fa-add active"></i>
+                </li>
+                <li class="all" data-page=".all-page">
+                    <i class="fa-solid fa-archive"></i>
+                </li>
+                <li class="done" data-page=".done-page">
+                    <i class="fa-solid fa-check"></i>
+                </li>
+                <li class="settings" data-page=".settings-page">
+                    <i class="fa-solid fa-gear"></i>
+                </li>
+            </ul>
+        </aside>
+        <div class="app-body">
+            <div class="add-page page">
+                <h1 class="note-app-title gradient-text">Notes App <i class="fa-solid fa-book"></i></h1>
+                <input type="text" placeholder="Title" class="title-input" />
+                <textarea class="discription-input" placeholder="Discription"></textarea>
+                <div class="add-btn cool-btn">Add Note</div>
+            </div>
+            <div class="all-page page hide">
+                <div class="empty-page">
+                    <h1 class="gradient-text">There Is No done Notes</h1>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-add"></i>
+                    </div>
+                    <p class="gradient-text">Press To Add One</p>
+                </div>
+            </div>
+            <div class="done-page page hide">
+                <div class="empty-page">
+                    <h1 class="gradient-text">There Is No Un Finish Notes</h1>
+                    <div class="add-icon">
+                        <i class="fa-solid fa-add"></i>
+                    </div>
+                    <p class="gradient-text">Press To Add One</p>
+                </div>
+            </div>
+            <div class="settings-page page hide">
+                <ul class="aside">
+                    <div class="show-aside-btn">
+                        <i class="fa-solid fa-arrow-circle-left"></i>
+                    </div>
+                    <li data-page=".deleted-notes"><i class="fa-solid fa-trash"></i></li>
+                    <li data-page=".login"><i class="fa-solid fa-user"></i></li>
+                    <li data-page=".sign-up"><i class="fa-solid fa-user-plus"></i></li>
+                    <li class="active" data-page=".about-me"><i class="fa-solid fa-contact-book"></i></li>
+                </ul>
+                <div class="deleted-notes hide page">
+                    <div class="del-notes-container">
+
+                    </div>
+                    <div class="delete-all">Delete All Notes</div>
+                </div>
+                <div class="sign-up hide page">
+                    <h1 class="title gradient-text">Sign-Up</h1>
+                    <p class="info gradient-text">
+                        We Are Glade That You Are Chose Us !
+                    </p>
+                    <form class="form">
+                        <div class="input-box">
+                            <label for="name1"><i class="fa-solid fa-user"></i></label>
+                            <input type="text" name="name" id="name1" placeholder="Your Name" />
+                        </div>
+                        <div class="input-box">
+                            <label for="email"><i class="fa-solid fa-message"></i></label>
+                            <input type="email" name="email" id="email" placeholder="Your Email" />
+                        </div>
+                        <div class="input-box">
+                            <label for="password"><i class="fa-solid fa-lock"></i></label>
+                            <input type="password" name="password" id="password" placeholder="Your Password" />
+                        </div>
+                        <div class="input-box">
+                            <label for="password2"><i class="fa-solid fa-lock"></i></label>
+                            <input type="password" name="password2" id="password2" placeholder="Confirm Your Password" />
+                        </div>
+                        <div class="btn-container">
+                            <button class="btn cool-btn">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="login hide page">
+                    <h1 class="title gradient-text">Log In</h1>
+                    <p class="info gradient-text">Log In With</p>
+                    <ul class="social">
+                        <li>
+                            <a href="" class="facebook"><i class="fa-brands fa-facebook"></i
+                ></a>
+                        </li>
+                        <li>
+                            <a href="" class="google"><i class="fa-brands fa-google"></i
+                ></a>
+                        </li>
+                        <li>
+                            <a href="" class="linkedin"><i class="fa-brands fa-linkedin"></i
+                ></a>
+                        </li>
+                    </ul>
+                    <p class="info">Or Use Your Account</p>
+                    <form class="form">
+                        <div class="input-box">
+                            <label for="name"><i class="fa-solid fa-user"></i></label>
+                            <input type="text" placeholder="User Name" name="name" id="name" />
+                        </div>
+                        <div class="input-box">
+                            <label for="password3"><i class="fa-solid fa-lock"></i></label>
+                            <input type="password" placeholder="Password" name="password" id="password3" />
+                        </div>
+                        <div class="btn-container">
+                            <button class="btn cool-btn">Log In</button>
+                        </div>
+                    </form>
+                    <p class="footer gradient-text">
+                        Dont Have Account ? Don't Wait More And<span class="up-btn">Create One !</span
+              >
+            </p>
+                </div>
+                <div class="about-me page">
+                    <p class="gradient-text title">Connect For More Applications!</p>
+                    <div class="about-me-content">
+                        <div class="info">
+                            <img src="./contact.svg" alt="" />
+                            <ul>
+                              <li class="twitter">
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                              </li>
+                              <li class="facebook">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                              </li>
+                              <li class="instagram">
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                              </li>
+                              <li class="linkedin">
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="image-container">
+                            <img src="./img-4.svg" alt="" />
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="all.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
