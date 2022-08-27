@@ -582,7 +582,7 @@ aside ul li svg,
     padding: 10px;
     background-color: var(--main-color);
     cursor: pointer;
-    border-radius: 15px 0;
+    border-radius: 8px;
     transition: 0.3s all ease-in-out;
     font-size: 12px;
 }
@@ -596,16 +596,18 @@ aside ul li svg,
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    text-align: center;
 }
 
 .settings-page .delete-all {
     width: fit-content;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 22px;
     margin: 30px auto;
     background: var(--gradient-bg);
     padding: 20px;
-    border-radius: 50px 0;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     color: var(--main-color);
@@ -614,7 +616,6 @@ aside ul li svg,
 
 .settings-page .delete-all:hover {
     transform: scale(96%);
-    border-radius: 0 50px;
 }
 
 .sign-up,
@@ -640,7 +641,7 @@ aside ul li svg,
 
 .sign-up .form,
 .login .form {
-    padding: 0 100px;
+    padding: 0 25px;
 }
 
 .sign-up .form .input-box,
@@ -684,8 +685,7 @@ aside ul li svg,
 
 .sign-up .btn:hover,
 .login .btn:hover {
-    color: #e99cdb;
-    background: transparent;
+    transform: scale(96%);
 }
 
 .login .social {
